@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="paper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="《被删掉的第二行》前30章压缩试读草稿。天赋资质与修炼境界分轨，林砚从一星注释走进源武世界。" />
+    <meta name="theme-color" content="#17130f" />
+    <title>被删掉的第二行｜前30章压缩试读稿</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-progress" aria-hidden="true"><span id="readProgress"></span></div>
+    <header class="topbar">
+      <button class="icon-button mobile-only" id="menuButton" type="button" aria-label="打开目录" aria-expanded="false">目录</button>
+      <a class="brand" href="#chapter-001" aria-label="返回第一章">
+        <span class="brand-mark">注</span>
+        <span><strong>被删掉的第二行</strong><small>前30章 · 压缩试读稿</small></span>
+      </a>
+      <div class="toolbar" aria-label="阅读设置">
+        <button class="icon-button" id="fontDown" type="button" aria-label="减小字号">字−</button>
+        <button class="icon-button" id="fontUp" type="button" aria-label="增大字号">字＋</button>
+        <button class="icon-button" id="themeButton" type="button" aria-label="切换阅读主题">夜读</button>
+      </div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar" aria-label="章节目录">
+        <div class="sidebar-head">
+          <p class="eyebrow">卷一 · 被删掉的第二行</p>
+          <h2>章节目录</h2>
+          <label class="search-box">
+            <span class="sr-only">搜索章节</span>
+            <input id="chapterSearch" type="search" placeholder="搜索章名" autocomplete="off" />
+          </label>
+        </div>
+        <nav id="chapterList"></nav>
+        <div class="sidebar-note"><span>草稿说明</span><p>这是前30章压缩试读稿，并非符合正式连载篇幅的定稿。人物、名称与情节仍可根据反馈调整。</p></div>
+      </aside>
+      <button class="overlay" id="overlay" type="button" aria-label="关闭目录"></button>
+      <main class="reader" id="reader">
+        <section class="hero" id="hero">
+          <p class="eyebrow">全民觉醒 · 天赋进化 · F至SSS修炼</p>
+          <h1>一星天赋，<br />还有第二行。</h1>
+          <p class="lede">十八岁觉醒，林砚只得到一星“注释”。资质决定起点与当前上限，实力仍要从F境练起；他看见别人天赋中被藏起来的第二行，却必须亲手验证，才能走出自己的路。</p>
+          <div class="premise"><span>觉醒</span><i></i><span>校验</span><i></i><span>组队</span><i></i><span>进化</span></div>
+          <button class="start-button" id="startReading" type="button">从第一章开始</button>
+        </section>
+        <article class="chapter" id="chapter" hidden>
+          <header class="chapter-head">
+            <p class="chapter-kicker" id="chapterKicker"></p>
+            <h1 id="chapterTitle"></h1>
+            <div class="chapter-meta"><span id="chapterCount"></span><span>压缩试读稿 · 非正式成稿</span></div>
+          </header>
+          <div class="chapter-body" id="chapterBody"></div>
+          <footer class="chapter-footer">
+            <button id="prevChapter" type="button">← 上一章</button>
+            <button id="backToTop" type="button">回到章首</button>
+            <button id="nextChapter" type="button">下一章 →</button>
+          </footer>
+          <div class="end-mark" aria-hidden="true">未完待续</div>
+        </article>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js?v=20261028a"></script>
+  </body>
+</html>
