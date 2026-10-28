@@ -109,7 +109,7 @@ function renderChapter(index, { scroll = true } = {}) {
   els.prev.disabled = index === 0;
   els.next.disabled = index === state.chapters.length - 1;
   els.next.textContent = index === state.chapters.length - 1 ? "已读完前30章" : "下一章 →";
-  document.title = `${chapter.title}｜被删掉的第二行`;
+  document.title = `${chapter.title}｜你们的天赋，漏了一行`;
   renderChapterList(els.chapterSearch.value);
   closeMenu();
 
